@@ -1,0 +1,42 @@
+.input
+    position: relative
+
+    &__field
+        display: block
+        width: 100%
+        padding: 14px 16px
+ 
+        background: $main-bg
+        border: 1px solid $light-grey
+        border-radius: 4px            
+
+        &.error
+            border: 1px solid $error-red
+
+        &:focus.input__field:not(:placeholder-shown)~.input__label,
+        &:not(:placeholder-shown)~.input__label,
+        &:focus~.input__label
+            background-color: $main-bg
+
+            transform: translateY(-85%) scale(0.75)
+
+    &__label
+        position: absolute
+        top: 21%
+        left: 11px
+
+        padding: 0 5px
+
+        transition: 200ms linear
+        &.error
+            color: $error-red
+
+    &__tip
+        position: absolute
+        bottom: -16px
+
+        font-size: 12px
+        line-height: 1.17
+        color: $grey
+        &.error
+            color: $error-red

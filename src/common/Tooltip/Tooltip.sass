@@ -1,0 +1,24 @@
+.tooltip
+    position: absolute
+    bottom: 0
+
+    padding: 3px 16px
+    text-align: center
+    overflow-wrap: break-word
+
+    color: $white
+    font-size: 16px
+    line-height: 1.62
+    
+    background-color: $text-black
+    border-radius: 4px
+
+    opacity: 0
+    transition: opacity 400ms ease-in
+
+.truncate:hover~.tooltip
+        opacity: 1
+        transition: opacity 400ms ease-out
+
+.wrapper
+    position: relative

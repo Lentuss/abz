@@ -1,0 +1,16 @@
+.hero
+    height: calc( 100vh - 60px)
+    &__wrapper
+        height: 100%
+        width: auto
+        max-width: 1170px
+        margin: 0 auto
+        padding: 164px 322px 0
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/hero.webp')
+        background-size: cover
+        background-position: center
+        +r(1023)
+            padding: 89px 194px 0
+        +r(767)
+            padding: 40px 16px 0

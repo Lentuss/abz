@@ -1,0 +1,22 @@
+.users
+    padding: 140px 0 4px
+    &__list
+        // display: grid
+        // grid-template-columns: repeat(auto-fill, 280px)
+        // gap: 29px
+
+        display: flex
+        flex-wrap: wrap
+        gap: 29px
+        padding: 50px 0
+        +r(1023)
+            gap: 16px
+        +r(767)
+            gap: 20px
+    &__item
+        flex-basis: calc( (100% - 58px) / 3  )
+        +r(1023)
+            flex-basis: calc( (100% - 16px) / 2  )
+        +r(767)
+            flex-basis: 100%
+    

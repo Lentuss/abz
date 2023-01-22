@@ -1,0 +1,19 @@
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+// fonts
+=font($alias, $name, $weight, $style)
+  @font-face
+    font-family: $alias
+    src: url("../assets/fonts/" + $name + ".ttf") format("truetype"), 
+    font-weight: $weight
+    font-style: $style
+
+=useFont($name, $serif: 'sans-serif')
+  font-family: $name, $serif

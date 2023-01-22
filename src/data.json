@@ -1,0 +1,102 @@
+{"users": [
+        {
+            "id": 11631,
+            "name": "Test",
+            "email": "test@gmail.com",
+            "phone": "+380955388485",
+            "position": "Lawyer",
+            "position_id": 1,
+            "registration_timestamp": 1674079778,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/63c86e22ded6711631.jpeg"
+        },
+        {
+            "id": 1,
+            "name": "Leanne West",
+            "email": "onie34@lubowitz.com",
+            "phone": "+380936050764",
+            "position": "Content manager",
+            "position_id": 2,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a6596d3bb1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Ahmad Rodriguez",
+            "email": "isadore08@zulauf.biz",
+            "phone": "+380993215621",
+            "position": "Security",
+            "position_id": 3,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a6596f0072.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Jeromy Schultz",
+            "email": "gladys74@emmerich.com",
+            "phone": "+380957332233",
+            "position": "Security",
+            "position_id": 3,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a659709143.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Lorine Hoppe",
+            "email": "ozella.block@wiza.com",
+            "phone": "+380996727011",
+            "position": "Designer",
+            "position_id": 4,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65971a714.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "Peaches-Honeyblossom-Michelle-Charlotte-Angel-Vanessa",
+            "email": "peaches.honeyblossom .michelle.charlotte.angel.vanessa@gmail.com",
+            "phone": "+380672278518",
+            "position": "Designer",
+            "position_id": 4,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65972a8f5.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "Thomas Nienow",
+            "email": "dfay@gmail.com",
+            "phone": "+380998736377",
+            "position": "Lawyer",
+            "position_id": 1,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65973cf06.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "Jerry McLaughlin",
+            "email": "camryn21@yahoo.com",
+            "phone": "+380953248527",
+            "position": "Content manager",
+            "position_id": 2,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65974c367.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Leon Lakin",
+            "email": "dkling@gmail.com",
+            "phone": "+380996393153",
+            "position": "Lawyer",
+            "position_id": 1,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65975c4c8.jpeg"
+        },
+        {
+            "id": 9,
+            "name": "Alvah Goyette",
+            "email": "nicola43@ullrich.biz",
+            "phone": "+380938289576",
+            "position": "Content manager",
+            "position_id": 2,
+            "registration_timestamp": 1604494937,
+            "photo": "https://frontend-test-assignment-api.abz.agency/images/users/5fa2a65976cf19.jpeg"
+        }
+    ]}
