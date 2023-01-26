@@ -35,6 +35,7 @@ const Users = () => {
 
     useEffect(() => {
         currentPage !== 1 ? setCurrentPage(1) : dispatch(getUsers(currentPage));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isLoggedIn])
 
 
