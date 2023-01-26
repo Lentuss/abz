@@ -8,7 +8,7 @@ const Card = ({ data }) => {
     return (
         <div className='user'>
             <img className='user__avatar' src={data.photo} alt='avatar' />
-            <div className="wrapper">
+            <div className="user__wrapper">
 
                 <TextTruncate
                     className='user__name truncate'
