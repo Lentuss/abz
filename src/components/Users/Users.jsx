@@ -34,7 +34,7 @@ const Users = () => {
     }, [currentPage])
 
     useEffect(() => {
-        setCurrentPage(1)
+        currentPage !== 1 ? setCurrentPage(1) : dispatch(getUsers(currentPage));
     }, [isLoggedIn])
 
 
