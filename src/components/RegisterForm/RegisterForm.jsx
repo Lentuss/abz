@@ -16,7 +16,7 @@ import { getUsers } from 'redux/users/usersOperations';
 const RegisterForm = () => {
     const [positions, setPositions] = useState({})
     const dispatch = useDispatch();
-    const isLoading = useSelector(state => state.usersData.registerSlice.isLoading);
+    const { isLoading } = useSelector(state => state.usersData.registerSlice);
     const { isLoggedIn } = useSelector(state => state.usersData.registerSlice);
 
     useEffect(() => {

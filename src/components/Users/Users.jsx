@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { animateScroll as scroll, scroller } from 'react-scroll';
 
+import { getUsers } from 'redux/users/usersOperations';
+
 import Card from 'common/Card'
 import Heading from 'common/Heading'
 import { MainButton } from 'common/Buttons'
-import { getUsers } from 'redux/users/usersOperations';
+import Preloader from '../../common/Preloader';
 
 
 const Users = () => {
@@ -13,6 +15,7 @@ const Users = () => {
     const { users } = useSelector(state => state.usersData.usersSlice);
     const { totalPages } = useSelector(state => state.usersData.usersSlice)
     const { isLoggedIn } = useSelector(state => state.usersData.registerSlice);
+    const { isLoading } = useSelector(state => state.usersData.registerSlice);
     const dispatch = useDispatch()
 
     const scrollTo = () => {
@@ -43,6 +46,7 @@ const Users = () => {
         <div className="container">
             <div className='users' name='users' id='users'>
                 <Heading text='Working with GET request' />
+                {isLoading && <Preloader />}
                 <ul className='users__list'>
                     {users && users.map(user => (
                         <li key={user.id} className='users__item'>
