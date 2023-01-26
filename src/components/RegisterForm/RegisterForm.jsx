@@ -73,8 +73,10 @@ const RegisterForm = () => {
                             dispatch(register(formData))
                             dispatch(getUsers(1))
                         }}
+
                     >
-                        {({ errors, touched, setFieldValue }) => (
+                        {({ errors, touched, setFieldValue }) =>
+                        (
                             < Form className='form__wrapper'>
 
                                 {errors.name && touched.name
