@@ -5,7 +5,7 @@ import Header from 'components/Header';
 
 const SharedLayout = props => {
     return (
-        <div >
+        <div className='layout' id='scroll-container'>
             <Header />
             <Outlet />
         </div>

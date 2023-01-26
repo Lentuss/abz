@@ -2,20 +2,20 @@ import { createSlice } from '@reduxjs/toolkit';
 import { register } from './registerOperations';
 
 const initialState = {
-  user: { name: null, email: null, phone: null, position: null, photo: null },
-  token: null,
+  user: { name: null, email: null, phone: null, positionId: null, photo: null },
   isLoggedIn: false,
+  isLoading: false
 };
 
 const registerSlice = createSlice({
   name: 'registerSlice',
   initialState,
-  reducers: {
-    [register.pending]: (state, action) => state,
+  extraReducers: {
+    [register.pending] (state, action) {state.isLoading = true;},
     [register.fulfilled](state, action) {
       state.user = action.payload.user;
-      state.token = action.payload.token;
       state.isLoggedIn = true;
+      state.isLoading = false;
     },
     [register.rejected]: (state, action) => action.payload,
   },

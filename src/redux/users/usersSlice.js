@@ -1,19 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, current } from '@reduxjs/toolkit';
 import { getUsers } from './usersOperations';
 
 const initialState = {
-  user: { name: null, email: null, phone: null, positionId: null, photo: null },
-  token: null,
-  isLoggedIn: false,
+  users: [], totalPages: 1
 };
 
 const usersSlice = createSlice({
   name: 'usersSlice',
   initialState,
-  reducers: {
-    [getUsers.pending]: (state, action) => state,
+  extraReducers: {
+    [getUsers.pending](state, action) {state.isLoading = true;},
     [getUsers.fulfilled](state, action) {
       state.users = action.payload.users;
+      state.totalPages = action.payload.total_pages;
+      state.isLoading = false;
+      console.log(action.payload)
     },
     [getUsers.rejected]: (state, action) => action.payload,
   },

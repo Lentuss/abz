@@ -1,6 +1,6 @@
 import React from 'react'
 import TextTruncate from 'react-text-truncate';
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import Tooltip from 'common/Tooltip'
 
@@ -44,8 +44,6 @@ const Card = ({ data }) => {
                 text={data.phone}
                 textTruncateChild={<Tooltip value={data.phone} />}
             />
-            {/* <ul className='user__attributes'>
-            </ul> */}
         </div>
     )
 }

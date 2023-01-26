@@ -5,11 +5,11 @@ import Button from '../Button'
 
 const MainButton = ({
   text, className, size, type = 'button',
-  onClick
+  onClick, disabled
 }) => {
   const classes = cx('main-btn', className, size)
   return (
-    <Button text={text} className={classes} type={type} onClick={onClick} />
+    <Button text={text} className={classes} type={type} onClick={onClick} disabled={disabled} />
   )
 }
 
