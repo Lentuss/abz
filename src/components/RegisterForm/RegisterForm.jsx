@@ -49,7 +49,7 @@ const RegisterForm = () => {
             <div className="form" name='register'>
                 <Heading text='Working with POST request' />
                 {isLoading && <Preloader />}
-                {!isLoggedIn ? <SuccessMessage /> :
+                {isLoggedIn ? <SuccessMessage /> :
                     <Formik
                         initialValues={{
                             name: '',

@@ -49,7 +49,7 @@ const Card = ({ data }) => {
 }
 
 Card.propTypes = {
-
+    data: PropTypes.object.isRequired
 }
 
 export default Card
