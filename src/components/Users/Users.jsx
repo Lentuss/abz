@@ -17,6 +17,7 @@ const Users = () => {
     const { isLoggedIn } = useSelector(state => state.usersData.registerSlice);
     const { isLoading } = useSelector(state => state.usersData.registerSlice);
     const dispatch = useDispatch()
+    console.log(scroll);
 
     const scrollTo = () => {
         scroller.scrollTo('users', {
@@ -29,6 +30,7 @@ const Users = () => {
 
     useEffect(() => {
         dispatch(getUsers(currentPage));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentPage])
 
     useEffect(() => {

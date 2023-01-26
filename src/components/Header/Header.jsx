@@ -28,6 +28,8 @@ const Header = () => {
         })
     }
 
+    console.log(scroll);
+
     return (
         <header className="header" >
             <div className="container">

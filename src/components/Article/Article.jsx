@@ -7,6 +7,7 @@ import { MainButton } from 'common/Buttons'
 import Paragraph from 'common/Paragraph'
 
 const Article = () => {
+
     const goToRegister = () => {
         scroller.scrollTo('register', {
             duration: 1200,
@@ -15,6 +16,7 @@ const Article = () => {
             offset: 100
         })
     }
+    console.log(scroll)/////
     return (
         <div className="article">
             <div className="article__wrapper">
