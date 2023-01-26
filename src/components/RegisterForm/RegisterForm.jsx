@@ -9,6 +9,7 @@ import Upload from 'common/Upload';
 import Input from 'common/Input';
 import SignupSchema from './validation';
 import Preloader from '../../common/Preloader';
+import SuccessMessage from 'common/SuccessMessage';
 
 import { register } from 'redux/register/registerOperations';
 import { getUsers } from 'redux/users/usersOperations';
@@ -48,7 +49,7 @@ const RegisterForm = () => {
             <div className="form" name='register'>
                 <Heading text='Working with POST request' />
                 {isLoading && <Preloader />}
-                {isLoggedIn ? <Heading text='User successfully registered' /> :
+                {!isLoggedIn ? <SuccessMessage /> :
                     <Formik
                         initialValues={{
                             name: '',
